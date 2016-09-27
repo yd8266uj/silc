@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--Import Google Icon Font-->
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!-- Compiled and minified CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+		<!--Let browser know website is optimized for mobile-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<style>
+		body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+  
+  
+  .fuzzy {
+	-webkit-filter: blur(4px) grayscale(.5);
+	filter: blur(4px) grayscale(.5);
+	transform: scale(1.1);
+	
+  }
+  
+  .backitup {
+	position: absolute;
+	z-index: -1;
+  }
+  #preview1{
+	display:none;
+  }
+  #preview1:target{
+	display:block;
+  }
+  
+  #staggered, #staggered li {
+	opacity: 0;
+  }
+  .slides img {
+	opacity: .5;
+  }
+
+      
+		</style>
+	<head>
+	<body>
+		<header class="page-header">
+			<div class="row container">
+				<a href="#" class="brand-logo center"><img class="responsive-img" src="silcHeader.png"></a>
+			</div>
+		</header>
+		
+		<main>
+		   
+<div class="section"> 
+		<div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="http://2.bp.blogspot.com/_TIxEAsjeuBw/TPRyV0KDn_I/AAAAAAAACEU/PhycCNK-QTk/s1600/P1010026.JPG"> <!-- random image -->
+        <div class="caption center-align">
+          <h5 class="light grey-text text-lighten-3">where learning...</h5>
+		  <h2 class="purple-text">Excites</h2>
+        </div>
+      </li>
+      <li>
+        <img src="https://i.ytimg.com/vi/OOLIxVLinns/maxresdefault.jpg"> <!-- random image -->
+        <div class="caption left-align">
+          
+          <h5 class="light grey-text text-lighten-3">where culture...</h5>
+		  <h2 class="yellow-text">Moves</h2>
+        </div>
+      </li>
+      <li>
+        <img src="http://1.bp.blogspot.com/_TIxEAsjeuBw/TPRyrM3t4xI/AAAAAAAACFY/X4RyojUlQcQ/s1600/P1010044.JPG"> <!-- random image -->
+        <div class="caption right-align">
+          
+          <h5 class="light grey-text text-lighten-3">where community...</h5>
+		  <h2 class="orange-text">Unites</h2>
+        </div>
+      </li>
+    </ul>
+  </div>
+  </div>
+  
+  <div class="container section"> 
+	<div class="row">
+		<p class="flow-text">SILC is dedicated to teaching our communities about the laguages and cultures of India. As a part of that commitment, we offer the following learning tools. </p>
+	</div>
+  </div>
+   
+<div class="container section"> 
+
+	<div class="row">
+		<div class="col s12 l8 offset-l2">
+			<ul id="staggered" class="collapsible collection">
+				<li>
+				  <a class="collapsible-header collection-item active">Quote Scrambler<span class="new red badge right" data-badge-caption="puzzle" style="position:relative"></span><span class="new badge blue right" style="position:relative"></span></a>
+				  <div class="collapsible-body">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed erat neque. Donec tellus lorem, sodales a sem in, tincidunt semper quam. Nam urna mi, semper vel lobortis ut, faucibus et nisi. Integer tristique sapien dolor, vel varius velit lobortis eget. Suspendisse potenti. Praesent mi libero, placerat eget neque sed, auctor auctor urna. Nulla commodo tempor nibh id lobortis. Morbi tempus dapibus dolor vulputate tristique. Praesent malesuada libero justo, quis consectetur elit fermentum id. Sed efficitur mauris mauris, id ultrices lacus facilisis at. Fusce eu auctor sem. Duis vitae nisl vitae lectus lacinia lobortis.</p>
+						<p class="right-align">
+							<a class="modal-trigger waves-effect waves-light btn" href="#modal1">Create</a>						
+							<a class="waves-effect btn-flat" href="#preview1">Preview</a>
+						</p>					
+				  </div>
+				</li>
+				<li>
+				  <a class="collapsible-header collection-item">Word Match</span><span class="new badge green right" data-badge-caption="tags" style="position:relative"></span></a>
+				  <div class="collapsible-body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed erat neque. Donec tellus lorem, sodales a sem in, tincidunt semper quam. Nam urna mi, semper vel lobortis ut, faucibus et nisi. Integer tristique sapien dolor, vel varius velit lobortis eget. Suspendisse potenti. Praesent mi libero, placerat eget neque sed, auctor auctor urna. Nulla commodo tempor nibh id lobortis. Morbi tempus dapibus dolor vulputate tristique. Praesent malesuada libero justo, quis consectetur elit fermentum id. Sed efficitur mauris mauris, id ultrices lacus facilisis at. Fusce eu auctor sem. Duis vitae nisl vitae lectus lacinia lobortis.</p></div>
+				</li>
+				<li>
+				  <a class="collapsible-header collection-item">Word Find</a>
+				  <div class="collapsible-body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed erat neque. Donec tellus lorem, sodales a sem in, tincidunt semper quam. Nam urna mi, semper vel lobortis ut, faucibus et nisi. Integer tristique sapien dolor, vel varius velit lobortis eget. Suspendisse potenti. Praesent mi libero, placerat eget neque sed, auctor auctor urna. Nulla commodo tempor nibh id lobortis. Morbi tempus dapibus dolor vulputate tristique. Praesent malesuada libero justo, quis consectetur elit fermentum id. Sed efficitur mauris mauris, id ultrices lacus facilisis at. Fusce eu auctor sem. Duis vitae nisl vitae lectus lacinia lobortis.</p></div>
+				</li>
+				<li>
+				  <a class="collapsible-header collection-item">Scambled Shapes</a>
+				  <div class="collapsible-body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed erat neque. Donec tellus lorem, sodales a sem in, tincidunt semper quam. Nam urna mi, semper vel lobortis ut, faucibus et nisi. Integer tristique sapien dolor, vel varius velit lobortis eget. Suspendisse potenti. Praesent mi libero, placerat eget neque sed, auctor auctor urna. Nulla commodo tempor nibh id lobortis. Morbi tempus dapibus dolor vulputate tristique. Praesent malesuada libero justo, quis consectetur elit fermentum id. Sed efficitur mauris mauris, id ultrices lacus facilisis at. Fusce eu auctor sem. Duis vitae nisl vitae lectus lacinia lobortis.</p></div>
+				</li>
+				<li>
+				  <a class="collapsible-header collection-item">Logical Characters</a>
+				  <div class="collapsible-body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed erat neque. Donec tellus lorem, sodales a sem in, tincidunt semper quam. Nam urna mi, semper vel lobortis ut, faucibus et nisi. Integer tristique sapien dolor, vel varius velit lobortis eget. Suspendisse potenti. Praesent mi libero, placerat eget neque sed, auctor auctor urna. Nulla commodo tempor nibh id lobortis. Morbi tempus dapibus dolor vulputate tristique. Praesent malesuada libero justo, quis consectetur elit fermentum id. Sed efficitur mauris mauris, id ultrices lacus facilisis at. Fusce eu auctor sem. Duis vitae nisl vitae lectus lacinia lobortis.</p></div>
+				</li>
+				<li>
+				  <a class="collapsible-header collection-item">Text Analyzer</a>
+				  <div class="collapsible-body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed erat neque. Donec tellus lorem, sodales a sem in, tincidunt semper quam. Nam urna mi, semper vel lobortis ut, faucibus et nisi. Integer tristique sapien dolor, vel varius velit lobortis eget. Suspendisse potenti. Praesent mi libero, placerat eget neque sed, auctor auctor urna. Nulla commodo tempor nibh id lobortis. Morbi tempus dapibus dolor vulputate tristique. Praesent malesuada libero justo, quis consectetur elit fermentum id. Sed efficitur mauris mauris, id ultrices lacus facilisis at. Fusce eu auctor sem. Duis vitae nisl vitae lectus lacinia lobortis.</p></div>
+				</li>
+				<li>
+				  <a class="collapsible-header collection-item">4PICS1WORD</a>
+				  <div class="collapsible-body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed erat neque. Donec tellus lorem, sodales a sem in, tincidunt semper quam. Nam urna mi, semper vel lobortis ut, faucibus et nisi. Integer tristique sapien dolor, vel varius velit lobortis eget. Suspendisse potenti. Praesent mi libero, placerat eget neque sed, auctor auctor urna. Nulla commodo tempor nibh id lobortis. Morbi tempus dapibus dolor vulputate tristique. Praesent malesuada libero justo, quis consectetur elit fermentum id. Sed efficitur mauris mauris, id ultrices lacus facilisis at. Fusce eu auctor sem. Duis vitae nisl vitae lectus lacinia lobortis.</p></div>
+				</li>
+				<li>
+				  <a class="collapsible-header collection-item">Whats The Name</a>
+				  <div class="collapsible-body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed erat neque. Donec tellus lorem, sodales a sem in, tincidunt semper quam. Nam urna mi, semper vel lobortis ut, faucibus et nisi. Integer tristique sapien dolor, vel varius velit lobortis eget. Suspendisse potenti. Praesent mi libero, placerat eget neque sed, auctor auctor urna. Nulla commodo tempor nibh id lobortis. Morbi tempus dapibus dolor vulputate tristique. Praesent malesuada libero justo, quis consectetur elit fermentum id. Sed efficitur mauris mauris, id ultrices lacus facilisis at. Fusce eu auctor sem. Duis vitae nisl vitae lectus lacinia lobortis.</p></div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	</div>
+            
+	</main>
+		
+		 <footer class="page-footer white grey-text text-darken-2">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="text-darken-4">About SILC</h5>
+                <p class="grey-text text-darken-2">
+SILC is the School for Indian Language and Culture in Minnesota, established in 1979. Its mission is to promote community for those whose family or culture includes India and to promote deeper understanding of its rich diversity, history, culture, natural resources, festivals, games, food, art, dance, music and more!</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="">Connect</h5>
+                <ul>
+                  <li><a class=" grey-text text-darken-2" href="https://sites.google.com/site/silcminnesota/">Homepage</a></li>
+                  <li><a class=" grey-text text-darken-2" href="https://www.youtube.com/channel/UCySBiQOQcCMJDst8334Bhzg">Youtube</a></li>
+                  <li><a class=" grey-text text-darken-2" href="https://www.facebook.com/silcmn">Facebook</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="grey-text text-darken-2">
+            <div class="container">
+            &copy; 2016 Falcon Group
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
+   <div class="input-field" style="position: fixed; right:0; bottom:0">
+    <select>
+		<option value="" disabled selected>Language</option>
+		<option value="1">English</option>
+		<option value="2">Hindi</option>
+		<option value="3">Telugu</option>
+		<option value="4">Gujarati</option>
+		<option value="5">Malayalam</option>
+    </select>
+
+  
+  </div>
+<div id="modal1" class="modal modal-fixed-footer">
+    <div class="modal-content row">
+		<h4 class="">Quote Scrambler</h4>
+		<form action="#">
+			<div class="input-field">          
+			  <label for="textarea1">quote or phrase</label>
+			  <textarea id="textarea1" class="materialize-textarea"></textarea>
+			</div>
+			<div class="input-field col s12 m6">
+				<select>
+					<option value="" disabled selected>characters per tile</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+				</select>
+			</div>
+			<div class="input-field col s12 m6">
+				<select>
+					<option value="" disabled selected>choose your Language</option>
+					<option value="1">English</option>
+					<option value="2">Hindi</option>
+					<option value="3">Telugu</option>
+					<option value="4">Gujarati</option>
+					<option value="5">Malayalam</option>
+				</select>
+			</div>			
+		</form>
+    </div>
+    <div class="modal-footer">
+		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+    </div>
+</div>
+<a id="preview1" href="#" style="position:fixed;top:0;bottom:0;left:0;right:0;background-color:#212121;z-index::100">
+	<div class="valign-wrapper" style="height:100%"><img  class="valign" src="silcHeader.png" style="margin-left:auto;margin-right:auto"></div>
+</a>
+		<!--Import jQuery before materialize.js-->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<!-- Compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+		<script>
+			$( document ).ready(function() {
+				  $('.carousel.carousel-slider').carousel({full_width: true});
+				  $('.slider').slider({full_width: true});
+				  $('.slider').slider('start');
+				  $('select').material_select();
+				  var options = [
+					{selector: '#staggered', offset: 50, callback: function(el) {
+						$('#staggered').css("opacity","1");
+						Materialize.showStaggeredList('#staggered');
+					} } ];
+				  Materialize.scrollFire(options);
+				  $('.modal-trigger').leanModal({
+					dismissable: false,
+					ready: function() {}
+				  });
+				 
+			});
+		</script>
+	</body>
+</html>
+        
