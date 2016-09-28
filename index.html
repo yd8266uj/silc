@@ -35,6 +35,14 @@
 			.slides img {
 				opacity: .5;
 			}
+			
+			.modal-header {
+				color: #ffa726; //orange
+				line-height: 1.5rem;
+				padding: 10px 20px;
+				margin:0;
+				border-bottom: 1px solid #e0e0e0;
+			}
 		</style>
 	<head>
 	<body>
@@ -42,6 +50,11 @@
 			<div class="row container">
 				<a href="#" class="brand-logo center"><img id="image-header" class="responsive-img" src="img/silcHeader.png"></a>
 			</div>
+			<ul id="slide-out" class="side-nav">
+				<li><a href="#!">First Sidebar Link</a></li>
+				<li><a href="#!">Second Sidebar Link</a></li>
+			</ul>
+			<a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
 		</header>		
 		<main>		   
 			<div class="section"> 
@@ -72,12 +85,12 @@
 				</div>
 			</div>
 			<div class="container section"> 
-				<div class="row">
-					<p class="flow-text">SILC is dedicated to teaching our communities about the laguages and cultures of India. As a part of that commitment, we offer the following learning tools. </p>
+				<div class="row valign-wrapper" style="min-height:400px">
+					<blockquote class="valign flow-text container">SILC is dedicated to teaching our communities about the laguages and cultures of India. As a part of that commitment, we offer the following learning tools. </blockquote>
 				</div>
 			</div>   
 			<div class="container section"> 
-				<div class="row">
+				<div class="row hide">
 					<div class="input-field col s4 m3 l2 push-l10">
 						<select multiple>
 						  <option value="" disabled selected>filter</option>
@@ -116,31 +129,31 @@
 								</div>
 							</li>
 							<li>
-								<a class="collapsible-header collection-item">Word Match<div class="red chip">tags</div></a>
+								<a class="collapsible-header collection-item"><h5 style='display:inline'>Word Match</h5><div class="red chip">tags</div></a>
 								<div class="collapsible-body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed erat neque. Donec tellus lorem, sodales a sem in, tincidunt semper quam. Nam urna mi, semper vel lobortis ut, faucibus et nisi. Integer tristique sapien dolor, vel varius velit lobortis eget. Suspendisse potenti. Praesent mi libero, placerat eget neque sed, auctor auctor urna. Nulla commodo tempor nibh id lobortis. Morbi tempus dapibus dolor vulputate tristique. Praesent malesuada libero justo, quis consectetur elit fermentum id. Sed efficitur mauris mauris, id ultrices lacus facilisis at. Fusce eu auctor sem. Duis vitae nisl vitae lectus lacinia lobortis.</p></div>
 							</li>
 							<li>
-								<a class="collapsible-header collection-item">Word Find</a>
+								<a class="collapsible-header collection-item"><h5 style='display:inline'>Word Find</h5></a>
 								<div class="collapsible-body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed erat neque. Donec tellus lorem, sodales a sem in, tincidunt semper quam. Nam urna mi, semper vel lobortis ut, faucibus et nisi. Integer tristique sapien dolor, vel varius velit lobortis eget. Suspendisse potenti. Praesent mi libero, placerat eget neque sed, auctor auctor urna. Nulla commodo tempor nibh id lobortis. Morbi tempus dapibus dolor vulputate tristique. Praesent malesuada libero justo, quis consectetur elit fermentum id. Sed efficitur mauris mauris, id ultrices lacus facilisis at. Fusce eu auctor sem. Duis vitae nisl vitae lectus lacinia lobortis.</p></div>
 							</li>
 							<li>
-								<a class="collapsible-header collection-item">Scambled Shapes</a>
+								<a class="collapsible-header collection-item"><h5 style='display:inline'>Scambled Shapes</h5></a>
 								<div class="collapsible-body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed erat neque. Donec tellus lorem, sodales a sem in, tincidunt semper quam. Nam urna mi, semper vel lobortis ut, faucibus et nisi. Integer tristique sapien dolor, vel varius velit lobortis eget. Suspendisse potenti. Praesent mi libero, placerat eget neque sed, auctor auctor urna. Nulla commodo tempor nibh id lobortis. Morbi tempus dapibus dolor vulputate tristique. Praesent malesuada libero justo, quis consectetur elit fermentum id. Sed efficitur mauris mauris, id ultrices lacus facilisis at. Fusce eu auctor sem. Duis vitae nisl vitae lectus lacinia lobortis.</p></div>
 							</li>
 							<li>
-								<a class="collapsible-header collection-item">Logical Characters</a>
+								<a class="collapsible-header collection-item"><h5 style='display:inline'>Logical Characters</h5></a>
 								<div class="collapsible-body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed erat neque. Donec tellus lorem, sodales a sem in, tincidunt semper quam. Nam urna mi, semper vel lobortis ut, faucibus et nisi. Integer tristique sapien dolor, vel varius velit lobortis eget. Suspendisse potenti. Praesent mi libero, placerat eget neque sed, auctor auctor urna. Nulla commodo tempor nibh id lobortis. Morbi tempus dapibus dolor vulputate tristique. Praesent malesuada libero justo, quis consectetur elit fermentum id. Sed efficitur mauris mauris, id ultrices lacus facilisis at. Fusce eu auctor sem. Duis vitae nisl vitae lectus lacinia lobortis.</p></div>
 							</li>
 							<li>
-								<a class="collapsible-header collection-item">Text Analyzer</a>
+								<a class="collapsible-header collection-item"><h5 style='display:inline'>Text Analyzer</h5></a>
 								<div class="collapsible-body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed erat neque. Donec tellus lorem, sodales a sem in, tincidunt semper quam. Nam urna mi, semper vel lobortis ut, faucibus et nisi. Integer tristique sapien dolor, vel varius velit lobortis eget. Suspendisse potenti. Praesent mi libero, placerat eget neque sed, auctor auctor urna. Nulla commodo tempor nibh id lobortis. Morbi tempus dapibus dolor vulputate tristique. Praesent malesuada libero justo, quis consectetur elit fermentum id. Sed efficitur mauris mauris, id ultrices lacus facilisis at. Fusce eu auctor sem. Duis vitae nisl vitae lectus lacinia lobortis.</p></div>
 							</li>
 							<li>
-								<a class="collapsible-header collection-item">4PICS1WORD</a>
+								<a class="collapsible-header collection-item"><h5 style='display:inline'>4PICS1WORD</h5></a>
 								<div class="collapsible-body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed erat neque. Donec tellus lorem, sodales a sem in, tincidunt semper quam. Nam urna mi, semper vel lobortis ut, faucibus et nisi. Integer tristique sapien dolor, vel varius velit lobortis eget. Suspendisse potenti. Praesent mi libero, placerat eget neque sed, auctor auctor urna. Nulla commodo tempor nibh id lobortis. Morbi tempus dapibus dolor vulputate tristique. Praesent malesuada libero justo, quis consectetur elit fermentum id. Sed efficitur mauris mauris, id ultrices lacus facilisis at. Fusce eu auctor sem. Duis vitae nisl vitae lectus lacinia lobortis.</p></div>
 							</li>
 							<li>
-								<a class="collapsible-header collection-item">Whats The Name</a>
+								<a class="collapsible-header collection-item"><h5 style='display:inline'>Whats The Name</h5></a>
 								<div class="collapsible-body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed erat neque. Donec tellus lorem, sodales a sem in, tincidunt semper quam. Nam urna mi, semper vel lobortis ut, faucibus et nisi. Integer tristique sapien dolor, vel varius velit lobortis eget. Suspendisse potenti. Praesent mi libero, placerat eget neque sed, auctor auctor urna. Nulla commodo tempor nibh id lobortis. Morbi tempus dapibus dolor vulputate tristique. Praesent malesuada libero justo, quis consectetur elit fermentum id. Sed efficitur mauris mauris, id ultrices lacus facilisis at. Fusce eu auctor sem. Duis vitae nisl vitae lectus lacinia lobortis.</p></div>
 							</li>
 						</ul>
@@ -186,37 +199,36 @@
 		</div>
 		
 <!-- modal for creating a 'Quote Scrambler' -->
-<div id="modal1" class="modal modal-fixed-footer">
-<div class="modal-content row">
-<h4 class="">Quote Scrambler</h4>
-<form action="#">
-<div class="input-field">          
-<label for="textarea1">quote or phrase</label>
-<textarea id="textarea1" class="materialize-textarea"></textarea>
-</div>
-<div class="input-field col s12 m6">
-<select>
-<option value="" disabled selected>characters per tile</option>
-<option value="2">2</option>
-<option value="3">3</option>
-<option value="4">4</option>
-</select>
-</div>
-<div class="input-field col s12 m6">
-<select>
-<option value="" disabled selected>choose your Language</option>
-<option value="1">English</option>
-<option value="2">Hindi</option>
-<option value="3">Telugu</option>
-<option value="4">Gujarati</option>
-<option value="5">Malayalam</option>
-</select>
-</div>			
-</form>
-</div>
-<div class="modal-footer">
-<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
-</div>
+<div id="modal1" class="modal">
+	<form action="http://sp-cfsics.metrostate.edu/~ics499su160220/silc_games_20V2/QSFL/process.php" method="get" target="_blank">
+		<div class="modal-header"><h5>Quote Scrambler</h5></div>
+		<div class="modal-content row">			
+			<div class="input-field col s3 m2">
+				<select name="numChars">
+					<option value="2">2</option>
+					<option value="3" selected>3</option>
+					<option value="4">4</option>
+				</select>
+			</div>
+			<div class="input-field col s6 m4">
+				<select name="language">
+					<option value="" disabled selected>choose your Language</option>
+					<option value="English">English</option>
+					<option value="Hindi">Hindi</option>
+					<option value="Telugu">Telugu</option>
+					<option value="Gujarati">Gujarati</option>
+					<option value="Malayalam">Malayalam</option>
+				</select>
+			</div>	
+			<div class="input-field col s12">          
+				<label for="textarea1">quote or phrase</label>
+				<textarea id="textarea1" class="materialize-textarea" name="userinput"></textarea>
+			</div>	
+		</div>
+		<div class="modal-footer">
+			<input type="submit" class="modal-action modal-close waves-effect waves-green btn-flat" value="Split">
+		</div>
+	</form>
 </div>
 
 <!-- modal for previewing 'Quote Scrambler' -->
@@ -235,6 +247,7 @@
 				$('.slider').slider({full_width: true});
 				$('.slider').slider('start');
 				$('select').material_select();
+				$(".button-collapse").sideNav();
 				var options = [
 					{selector: '#staggered', offset: 50, callback: function(el) {
 					$('#staggered').css("opacity","1");
