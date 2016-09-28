@@ -43,6 +43,12 @@
 				margin:0;
 				border-bottom: 1px solid #e0e0e0;
 			}
+			
+			.hoverable:hover {
+				background-color: #81C784;
+				color: #fff;
+				transition: color .2s, background-color .2s;
+			}
 		</style>
 	<head>
 	<body>
@@ -86,7 +92,7 @@
 			</div>
 			<div class="container section"> 
 				<div class="row valign-wrapper" style="min-height:400px">
-					<blockquote class="valign flow-text container">SILC is dedicated to teaching our communities about the laguages and cultures of India. As a part of that commitment, we offer the following learning tools. </blockquote>
+					<blockquote class="valign flow-text container hoverable">SILC is dedicated to teaching our communities about the laguages and cultures of India. As a part of that commitment, we offer the following learning tools. </blockquote>
 				</div>
 			</div>   
 			<div class="container section"> 
@@ -164,18 +170,18 @@
 		<footer class="page-footer white grey-text text-darken-2">
 			<div class="container">
 				<div class="row">
-					<div class="col l6 s12">
+					<div class="col l6 s12 hoverable">
 						<h5 class="text-darken-4">About SILC</h5>
-						<p class="grey-text text-darken-2">
+						<p>
 							SILC is the School for Indian Language and Culture in Minnesota, established in 1979. Its mission is to promote community for those whose family or culture includes India and to promote deeper understanding of its rich diversity, history, culture, natural resources, festivals, games, food, art, dance, music and more!
 						</p>
 					</div>
 					<div class="col l4 offset-l2 s12">
 						<h5 class="">Connect</h5>
 						<ul>
-							<li><a class=" grey-text text-darken-2" href="https://sites.google.com/site/silcminnesota/">Homepage</a></li>
-							<li><a class=" grey-text text-darken-2" href="https://www.youtube.com/channel/UCySBiQOQcCMJDst8334Bhzg">Youtube</a></li>
-							<li><a class=" grey-text text-darken-2" href="https://www.facebook.com/silcmn">Facebook</a></li>
+							<li><a href="https://sites.google.com/site/silcminnesota/">Homepage</a></li>
+							<li><a href="https://www.youtube.com/channel/UCySBiQOQcCMJDst8334Bhzg">Youtube</a></li>
+							<li><a href="https://www.facebook.com/silcmn">Facebook</a></li>
 						</ul>
 					</div>
 				</div>
@@ -226,14 +232,17 @@
 			</div>	
 		</div>
 		<div class="modal-footer">
-			<input type="submit" class="modal-action modal-close waves-effect waves-green btn-flat" value="Split">
+			<input type="submit" class="modal-action modal-close waves-effect waves-green btn-flat" value="Done">
 		</div>
 	</form>
 </div>
 
 <!-- modal for previewing 'Quote Scrambler' -->
 <div id="preview1" class="modal">
-<img src="img/silcHeader.png" style="">
+	<img src="img/silcHeader.png" style="">
+	<i class="material-icons z-depth-2 tooltipped" data-position="top" data-delay="20" data-tooltip="I can't read this" style='position:absolute;left:50%;top:65%;border-radius:12px'>info</i>
+	<i class="material-icons z-depth-2 tooltipped" data-position="top" data-delay="20" data-tooltip="Is this a whale?" style='position:absolute;left:5%;top:20%;border-radius:12px'>info</i>
+	<i class="material-icons z-depth-2 tooltipped" data-position="top" data-delay="20" data-tooltip="This should be a picture of the output from this script" style='position:absolute;right:20%;top:40%;border-radius:12px'>info</i>
 </div>
 
 		<!--Import jQuery before materialize.js-->
