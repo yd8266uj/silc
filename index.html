@@ -25,7 +25,13 @@
 	transform: scale(1.1);
 	
   }
-  
+  .chip {
+	line-height: inherit;
+	height: inherit;
+	border-radius: 2px;
+	float: right !important;
+	color: #fff !important;
+  }
   .backitup {
 	position: absolute;
 	z-index: -1;
@@ -43,6 +49,7 @@
   .slides img {
 	opacity: .5;
   }
+  
 
       
 		</style>
@@ -50,23 +57,23 @@
 	<body>
 		<header class="page-header">
 			<div class="row container">
-				<a href="#" class="brand-logo center"><img class="responsive-img" src="silcHeader.png"></a>
+				<a href="#" class="brand-logo center"><img id="image-header" class="responsive-img" src="silcHeader.png"></a>
 			</div>
 		</header>
 		
 		<main>
 		   
 <div class="section"> 
-		<div class="slider">
+		<div id="slider" class="slider">
     <ul class="slides">
-      <li>
-        <img src="http://2.bp.blogspot.com/_TIxEAsjeuBw/TPRyV0KDn_I/AAAAAAAACEU/PhycCNK-QTk/s1600/P1010026.JPG"> <!-- random image -->
-        <div class="caption center-align">
-          <h5 class="light grey-text text-lighten-3">where learning...</h5>
-		  <h2 class="purple-text">Excites</h2>
-        </div>
-      </li>
-      <li>
+		<li>
+			<img src="http://2.bp.blogspot.com/_TIxEAsjeuBw/TPRyV0KDn_I/AAAAAAAACEU/PhycCNK-QTk/s1600/P1010026.JPG"><!-- random image -->
+			<div class="caption center-align">
+				<h5 class="light grey-text text-lighten-3">where learning...</h5>
+				<h2 class="purple-text">Excites</h2>
+			</div>
+		</li>
+		<li>
         <img src="https://i.ytimg.com/vi/OOLIxVLinns/maxresdefault.jpg"> <!-- random image -->
         <div class="caption left-align">
           
@@ -85,6 +92,7 @@
     </ul>
   </div>
   </div>
+  </div>
   
   <div class="container section"> 
 	<div class="row">
@@ -95,20 +103,30 @@
 <div class="container section"> 
 
 	<div class="row">
+		<div class="input-field col s4 m3 l2 right">
+			<select multiple>
+			  <option value="" disabled selected>filter</option>
+			  <option value="1">puzzle</option>
+			  <option value="2">new</option>
+			  <option value="3">tags</option>
+			</select>
+		</div>
+	</div>
+	<div class="row">
 		<div class="col s12 l8 offset-l2">
 			<ul id="staggered" class="collapsible collection">
 				<li>
-				  <a class="collapsible-header collection-item active">Quote Scrambler<span class="new red badge right" data-badge-caption="puzzle" style="position:relative"></span><span class="new badge blue right" style="position:relative"></span></a>
+				  <a class="collapsible-header collection-item">Quote Scrambler<div class="blue chip">new</div><div class="green chip">puzzle</div></a>
 				  <div class="collapsible-body">
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed erat neque. Donec tellus lorem, sodales a sem in, tincidunt semper quam. Nam urna mi, semper vel lobortis ut, faucibus et nisi. Integer tristique sapien dolor, vel varius velit lobortis eget. Suspendisse potenti. Praesent mi libero, placerat eget neque sed, auctor auctor urna. Nulla commodo tempor nibh id lobortis. Morbi tempus dapibus dolor vulputate tristique. Praesent malesuada libero justo, quis consectetur elit fermentum id. Sed efficitur mauris mauris, id ultrices lacus facilisis at. Fusce eu auctor sem. Duis vitae nisl vitae lectus lacinia lobortis.</p>
 						<p class="right-align">
 							<a class="modal-trigger waves-effect waves-light btn" href="#modal1">Create</a>						
-							<a class="waves-effect btn-flat" href="#preview1">Preview</a>
+							<a class="modal-trigger waves-effect btn-flat" href="#preview1">Preview</a>
 						</p>					
 				  </div>
 				</li>
 				<li>
-				  <a class="collapsible-header collection-item">Word Match</span><span class="new badge green right" data-badge-caption="tags" style="position:relative"></span></a>
+				  <a class="collapsible-header collection-item">Word Match<div class="red chip">tags</div></a>
 				  <div class="collapsible-body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed erat neque. Donec tellus lorem, sodales a sem in, tincidunt semper quam. Nam urna mi, semper vel lobortis ut, faucibus et nisi. Integer tristique sapien dolor, vel varius velit lobortis eget. Suspendisse potenti. Praesent mi libero, placerat eget neque sed, auctor auctor urna. Nulla commodo tempor nibh id lobortis. Morbi tempus dapibus dolor vulputate tristique. Praesent malesuada libero justo, quis consectetur elit fermentum id. Sed efficitur mauris mauris, id ultrices lacus facilisis at. Fusce eu auctor sem. Duis vitae nisl vitae lectus lacinia lobortis.</p></div>
 				</li>
 				<li>
@@ -212,9 +230,11 @@ SILC is the School for Indian Language and Culture in Minnesota, established in 
 		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
     </div>
 </div>
-<a id="preview1" href="#" style="position:fixed;top:0;bottom:0;left:0;right:0;background-color:#212121;z-index::100">
-	<div class="valign-wrapper" style="height:100%"><img  class="valign" src="silcHeader.png" style="margin-left:auto;margin-right:auto"></div>
-</a>
+
+<div id="preview1" class="modal">
+    <img src="silcHeader.png" style="">
+</div>
+
 		<!--Import jQuery before materialize.js-->
 		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 		<!-- Compiled and minified JavaScript -->
@@ -234,8 +254,9 @@ SILC is the School for Indian Language and Culture in Minnesota, established in 
 				  $('.modal-trigger').leanModal({
 					dismissable: false,
 					ready: function() {}
-				  });
-				 
+				  });			  
+				Materialize.fadeInImage('#slider');		
+$('.scrollspy').scrollSpy();				
 			});
 		</script>
 	</body>
