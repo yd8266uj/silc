@@ -19,25 +19,17 @@
 		<div class="container">
 			<div class="row">
 				<h3>Once upon a time...</h3>
-				<ul id="tiles">
-					<li>
-						<div class="card teal col hoverable white-text" style="margin:11.25px;padding:11.25px;border-radius:22.5px">
-							<i class="large material-icons">flight</i>
-						</div>
-					</li>
-					<li>
-						<div class="card purple col hoverable white-text" style="margin:11.25px;padding:11.25px;border-radius:22.5px">
-							<i class="large material-icons">layers</i>
-						</div>
-					</li>
-					<li>
-						<div class="card yellow col hoverable white-text" style="margin:11.25px;padding:11.25px;border-radius:22.5px">
-							<i class="large material-icons">adb</i>
-						</div>
-					</li>
-				</ul>
+				<ul id="tiles"></ul>
 			</div>
 			<a href="#!" class="btn" onclick="deal()">Deal</a>
+			<a href="#rules" class="btn-flat modal-trigger">Rules</a>
+		</div>
+		<div id="rules" class="modal bottom-sheet">
+			<div class="modal-content container">
+				<h4>How to play</h4>
+				<p class="flow-text">Tell a story using the tiles displayed. Begin with, "Once upon a time..." Take turns choosing a tile and incorporate that image into your story. Its okay if you have different opinions on what an image means or how it fits into the story, that's the point. Be creative and enjoy!</p>
+			</div>
+			<div class="modal-footer"></div>
 		</div>
 		<!--Import jQuery before materialize.js-->
 		<script type="text/javascript" src="js/nouislider.min.js"></script>
@@ -50,7 +42,7 @@
 			
 			$( document ).ready(function() {
 				deal();
-				
+				$('.modal-trigger').leanModal();
 				
 			});
 			
