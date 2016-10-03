@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--Import Google Icon Font-->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!-- Compiled and minified CSS -->
+		<link rel="stylesheet" href="css/nouislider.min.css">
+		<link rel="stylesheet" href="css/materialize.css">
+		<link rel="stylesheet" href="css/default.css">
+		<!--Let browser know website is optimized for mobile-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<style>
+			#tiles li {
+				opacity:0;
+			}
+		</style>
+	<head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<h3>Once upon a time...</h3>
+				<ul id="tiles">
+					<li>
+						<div class="card teal col hoverable white-text" style="margin:11.25px;padding:11.25px;border-radius:22.5px">
+							<i class="large material-icons">flight</i>
+						</div>
+					</li>
+					<li>
+						<div class="card purple col hoverable white-text" style="margin:11.25px;padding:11.25px;border-radius:22.5px">
+							<i class="large material-icons">layers</i>
+						</div>
+					</li>
+					<li>
+						<div class="card yellow col hoverable white-text" style="margin:11.25px;padding:11.25px;border-radius:22.5px">
+							<i class="large material-icons">adb</i>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<a href="#!" class="btn" onclick="deal()">Deal</a>
+		</div>
+		<!--Import jQuery before materialize.js-->
+		<script type="text/javascript" src="js/nouislider.min.js"></script>
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		<!-- Compiled and minified JavaScript -->
+		<script src="js/materialize.min.js"></script>
+		<script>
+			var tiles = ["flight","brightness_2","brightness_5","edit","flash_on","grain","timer","texture","terrain","near_me","beach_access","location_city"]
+			var colors = ["green","purple","red","yellow","blue"];
+			
+			$( document ).ready(function() {
+				deal();
+				
+				
+			});
+			
+			function deal() {
+				$("#tiles").html("");
+				shuffle(tiles);
+				shuffle(colors);
+				for(i=0;i<5;i++) {				
+				var node = '<li><div class="card '
+				+ colors[i]
+				+ ' col hoverable white-text" style="margin:11.25px;padding:11.25px;border-radius:22.5px"><i class="large material-icons">'
+				+ tiles[i]
+				+ '</i></div></li>';
+				$("#tiles").append(node);
+				}
+				Materialize.showStaggeredList('#tiles');
+			}
+			
+			function shuffle(a) {
+				var j, x, i;
+				for (i = a.length; i; i--) {
+					j = Math.floor(Math.random() * i);
+					x = a[i - 1];
+					a[i - 1] = a[j];
+					a[j] = x;
+				}
+			}
+		</script>
+	</body>
+</html>
+        
